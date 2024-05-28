@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjust Column Table</title>
+    <link rel="stylesheet" href="assets/libs/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+
+<body>
+    <div class="px-4 py-5 my-5 text-center">
+
+        <h1 class="display-5 fw-bold">Adjust Table Column</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Hide or show table column for more flexibility and also store state of column after
+                refeshing.</p>
+
+        </div>
+        <div class="container mt-5">
+            <div class="d-flex justify-content-end py-2">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                    data-bs-target="#adjustColumnModal">
+                    Adjust Column
+                </button>
+
+
+            </div>
+            <div class="table-reponsive" id="dataTable">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Country</th>
+                            <th>Population</th>
+                            <th>Capital</th>
+                            <th>Continent</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 100 rows of data -->
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Country 1</td>
+                            <td>Population 1</td>
+                            <td>Capital 1</td>
+                            <td>Continent 1</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More rows here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="adjustColumnModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adjust Column</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input checked data-column="1" class="form-check-input adjust-column-input" type="checkbox"
+                                    value="" id="flexCheckDefault1">
+                                <label class="form-check-label" for="flexCheckDefault1">
+                                    #
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input checked data-column="2" class="form-check-input adjust-column-input" type="checkbox"
+                                    value="" id="flexCheckDefault2">
+                                <label class="form-check-label" for="flexCheckDefault2">
+                                    Country
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input checked data-column="3" class="form-check-input adjust-column-input" type="checkbox"
+                                    value="" id="flexCheckDefault3">
+                                <label class="form-check-label" for="flexCheckDefault3">
+                                    Population
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input checked data-column="4" class="form-check-input adjust-column-input" type="checkbox"
+                                    value="" id="flexCheckDefault4">
+                                <label class="form-check-label" for="flexCheckDefault4">
+                                    Capital
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input checked data-column="5" class="form-check-input adjust-column-input" type="checkbox"
+                                    value="" id="flexCheckDefault5">
+                                <label class="form-check-label" for="flexCheckDefault5">
+                                    Continent
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input checked data-column="6" class="form-check-input adjust-column-input" type="checkbox"
+                                    value="" id="flexCheckDefault6">
+                                <label class="form-check-label" for="flexCheckDefault6">
+                                    Actions
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="assets/libs/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
